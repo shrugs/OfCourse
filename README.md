@@ -11,3 +11,5 @@ Eventually, students will be able to easily query the data base to find informat
 ## Difficulties
 
 So LA TEch doesn't want to give me SELECT access to their databases (what, giving database access to a freshman is  a bad idea? huh?) so I'm scraping data from the website to generate these tables. Which means any development on the site depends on break-throughs on the backend.
+
+Currently available at (http://myfoot.org)[http://myfoot.org], but may be moved whenever I want to host another project on a new domain.
