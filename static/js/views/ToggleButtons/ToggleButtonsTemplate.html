@@ -1,0 +1,21 @@
+
+<% _.each(uniq_types, function(t) { %>
+    <% if (t == 'Course') { %>
+    <label class="btn btn-primary toggle-btn" data-toggle="course" id="toggle-btn-courses">
+      <input type="checkbox"> Courses
+    </label>
+    <% } else if (t == 'Subject') { %>
+    <label class="btn btn-primary toggle-btn" data-toggle="subject" id="toggle-btn-subjects">
+      <input type="checkbox"> Subjects
+    </label>
+    <% } else if (t == 'College') { %>
+    <label class="btn btn-primary toggle-btn" data-toggle="college" id="toggle-btn-colleges">
+      <input type="checkbox"> Colleges
+    </label>
+    <% } else if (t == 'Dept') { %>
+    <label class="btn btn-primary toggle-btn" data-toggle="dept" id="toggle-btn-depts">
+      <input type="checkbox"> Depts
+    </label>
+    <% } %>
+
+<% }); %>

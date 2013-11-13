@@ -1,0 +1,47 @@
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 card-container" id="<%= id %>">
+    <% if (type == 'Course') { %>
+        <div class="card card-course">
+    <% } else if (type == 'College') { %>
+        <div class="card card-college">
+    <% } else if (type == 'Dept') { %>
+        <div class="card card-dept">
+    <% } else if (type == 'Subject') { %>
+        <div class="card card-subject">
+    <% } %>
+        <div class="row">
+            <h3 class="card-title"><%= title %></h3>
+        </div>
+        <hr>
+        <% if (type == 'Course') { %>
+            <h3 class="course-code"><%= CourseCode %></h3>
+            <% if (CreditsMax == CreditsMin) { %>
+                <h4 class="course-credits">Credits: <%= CreditsMax %></h4>
+            <% } else { %>
+                <h4 class="course-credits">Credits: <%= CreditsMin %>&rarr;<%= CreditsMax %></h4>
+            <% } %>
+            <p>
+                <%= Description %>
+            </p>
+            <div class="card-info-btn-container">
+                <button data-id="<%= text %>" class="btn btn-info" disabled>See Classes for this Course</button>
+            </div>
+
+        <% } else if (type == 'College') { %>
+            <div class="card-info-btn-container">
+                <h3>College</h3>
+                <button data-id="<%= text %>" class="btn btn-info">See Courses for this College</button>
+            </div>
+        <% } else if (type == 'Dept') { %>
+            <div class="card-info-btn-container">
+                <h3>Department</h3>
+                <button data-id="<%= text %>" class="btn btn-info">See Courses for this Department</button>
+            </div>
+        <% } else if (type == 'Subject') { %>
+            <div class="card-info-btn-container">
+                <h3>Subject</h3>
+                <button data-id="<%= text %>" class="btn btn-info">See Courses for this Subject</button>
+            </div>
+        <% } %>
+    </div>
+</div>
