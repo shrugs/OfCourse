@@ -3,7 +3,7 @@
 OfCourse is a website that aims to offer easy access to information about LA Tech. The current website is awful, especially for finding courses that you may be interested in, so hopefully this will make it a little more bearable.
 
 #v2 is LIVE
-I've made a better version, hosted at http://bossboss.tk. Source code available at htp://github.com/MattCMultimedia/BossBoss
+I've made a better version, hosted at http://bossboss.tk. Source code available at http://github.com/MattCMultimedia/BossBoss
 
 ##Goals
 
